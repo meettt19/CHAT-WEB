@@ -1,0 +1,260 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(270, 20%, 96%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    font-family: "Figtree", sans-serif;
+    overflow: hidden;
+}
+.mobile{
+    position: relative;
+    left: 350px;
+    bottom: 400px;
+    background-color: hsl(270, 12%, 90%);
+    border: solid 12px white;
+    border-radius: 20px;
+    height: 555px;
+    width: 280px;
+}
+.box{
+    background-color: white;
+    height: 35px;
+    width: 65%;
+    margin: -85px 50px 0px 50px;
+    border-radius: 0px 0px 60px 60px;
+}
+.keyboard{
+    background-color: white;
+    height: 45px;
+    width: 90%;
+    margin: 5px 0px 0px 10px;
+    border-radius: 25px 25px 25px 25px;
+}
+.button{
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: -37px 0px 0px 220px;
+}
+.header{
+    background:linear-gradient(to right , hsl(264, 100%, 61%) , hsl(293, 100%, 63%));
+    height: 80px;
+    width: 280px;
+    border-radius: 10px 10px 5px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: END;
+    justify-content: space-between;
+}
+.image{
+    margin: 0px 0px 10px 0px;
+}
+.paragraph{
+    position: relative;
+    width: 420px; 
+    margin: 230px 0px 0px 0px; 
+    line-height: 1.8;
+    bottom: 1600px;
+    left: 850px;
+}
+.chat1{
+    background-color: hsl(264, 13%, 84%);
+    height: 45px;
+    width: 200px;
+    border-radius: 15px 15px 15px 0px;
+    margin: 60px 0px 0px 10px;
+}
+.chat2{
+    background-color: hsl(264, 13%, 84%);
+    height: 45px;
+    width: 200px;
+    border-radius: 15px 15px 15px 0px;
+    margin: 5px 0px 0px 10px;
+}
+.chat3{
+    background-color: white;
+    box-shadow: rgb(128, 128, 128, 0.2) 3px 3px ;
+    color: rgb(159, 157, 157);
+    height: 45px;
+    width: 200px;
+    border-radius: 15px 15px 0px 15px;
+    margin: 5px 0px 0px 70px;
+}
+.chat4{
+    background-color: white;
+    box-shadow: rgb(128, 128, 128, 0.2) 3px 3px ;
+    color: rgb(159, 157, 157);
+    height: 30px;
+    width: 140px;
+    border-radius: 15px 15px 0px 15px;
+    margin: 5px 0px 0px 130px;
+}
+.chat5{
+    background-color: hsl(264, 13%, 84%);
+    border-radius: 15px 15px 15px 0px;
+    width: 180px;
+    margin: 5px 0px 0px 10px ;
+}
+.chat6{
+    background:linear-gradient(to right , hsl(264, 100%, 61%) , hsl(293, 100%, 63%));
+    height: 40px;
+    width: 190px;
+    color: white;
+    margin: 5px 0px 0px 10px;
+    border-radius: 10px 10px 10px 0px;  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ;
+    gap: 6px;
+}
+.chat7{
+    background:linear-gradient(to right , hsl(264, 100%, 61%) , hsl(293, 100%, 63%));
+    height: 40px;
+    width: 190px;
+    color: white;
+    margin: 5px 0px 0px 10px;
+    border-radius: 10px 10px 10px 0px;  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ;
+    gap: -10px;
+}
+.circle1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid 1px white;
+    margin: 0px 13px 0px 0px;
+}
+.circle2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid 1px white;
+    margin: 0px 25px 0px 0px;
+}
+.dogs{
+    height: 50px;
+    width: 50px;
+    gap: 7px;
+    display: flex;
+    margin: 10px 0px 0px 110px;
+}
+.leftbox{
+    background-color: hsl(264, 100%, 61%);
+    height: 92vh;
+    width: 500px;
+    border-radius: 0px 0px 450px 450px;
+    margin: -180px 0px 0px -90px;
+}
+.rightbox{
+    position: relative;
+    background-color: hsl(266, 16%, 92%);
+    height: 92vh;
+    width: 500px;
+    border-radius: 450px 450px 0px 0px;
+    left: 1000px; 
+    bottom: 800px;    
+    margin-right: -200px;
+}
+
+
+.mobile {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpFade{
+
+    from{
+        opacity:0;
+        transform:translateY(70px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+@media screen and (max-width:500px) {
+
+    body{
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0;
+    }
+
+    .leftbox{
+        position: absolute;
+        width: 320px;
+        height: 420px;
+        left: -120px;
+        top: -170px;
+        margin: 0;
+    }
+
+    .rightbox{
+        display: none;
+    }
+
+    .mobile{
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 70px;
+        left: 20px;
+        bottom: auto;
+        z-index: 10;
+    }
+
+    .paragraph{
+        position: static;
+        width: 85%;
+        margin: 0 auto 50px;
+        text-align: center;
+        line-height: 1.8;
+    }
+
+    .paragraph h1{
+        margin-bottom:20px;
+        font-size:30px;
+    }
+
+    .paragraph p{
+        font-size:16px;
+    }
+    .paragraph{
+
+    animation: slideUpFade linear;
+
+    animation-timeline: view();
+
+    animation-range: entry 20% cover 35%;
+
+}
+}
