@@ -197,64 +197,59 @@ body{
 
 }
 
-
-@media screen and (max-width:500px) {
+@media screen and (max-width:500px){
 
     body{
-        overflow-y: auto;
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 30px 0;
+        overflow-x:hidden;
+        overflow-y:auto;
+        display:block;
+    }
+
+    .fullbody{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        width:100%;
     }
 
     .leftbox{
-        position: absolute;
-        width: 320px;
-        height: 420px;
-        left: -120px;
-        top: -170px;
-        margin: 0;
+        position:absolute;
+        width:320px;
+        height:480px;
+        left:-150px;
+        top:-150px;
+        margin:0;
+        z-index:-1;
     }
 
     .rightbox{
-        display: none;
+        display:none;
     }
 
     .mobile{
-        position: relative;
-        margin-top: 40px;
-        margin-bottom: 70px;
-        left: 20px;
-        bottom: auto;
-        z-index: 10;
+        position:static;
+        width:280px;
+        height:555px;
+        margin:60px auto 50px;
+        border:12px solid white;
     }
 
     .paragraph{
-        position: static;
-        width: 85%;
-        margin: 0 auto 50px;
-        text-align: center;
-        line-height: 1.8;
+        position:static;
+        width:320px;
+        margin:20px auto 80px;
+        text-align:center;
+        line-height:1.8;
+        animation:slideUpFade 1s ease forwards;
     }
 
     .paragraph h1{
+        font-size:42px;
         margin-bottom:20px;
-        font-size:30px;
     }
 
     .paragraph p{
-        font-size:16px;
+        font-size:18px;
     }
-    .paragraph{
 
-    animation: slideUpFade linear;
-
-    animation-timeline: view();
-
-    animation-range: entry 20% cover 35%;
-
-}
 }
